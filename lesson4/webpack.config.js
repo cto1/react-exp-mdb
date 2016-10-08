@@ -6,7 +6,7 @@ const resolve = path.resolve;
 module.exports = {
   target: 'web',
   context: resolve('src'),
-  entry: './index',
+  entry: './index.jsx',
   output: {
     path: resolve('dist'),
     filename: 'bundle.js',
@@ -14,7 +14,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js?$/,
+        test: /\.jsx?$/,
         loader: 'babel',
         exclude: /node_modules/
       },
