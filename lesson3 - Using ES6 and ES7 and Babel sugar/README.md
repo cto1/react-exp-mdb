@@ -1,0 +1,5 @@
+We start to using Babel sugar https://babeljs.io/docs/learn-es2015/ and Babel stage-0 features https://babeljs.io/docs/plugins/preset-stage-0/.
+
+And we split components to modules into containers/components folders.
+
+Start to using [Airbnb](https://github.com/airbnb/javascript/) syntaxes rules.
