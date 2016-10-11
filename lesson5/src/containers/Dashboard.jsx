@@ -11,9 +11,11 @@ export default class CommentBox extends Component {
     return (
       <div>
         <nav>
-          <IndexLink to="/" className="link" activeClassName="active">Home</IndexLink>
+          <IndexLink to="/" className="link" activeClassName="active">Dashboard</IndexLink>
+          <Link to="/main-information" className="link" activeClassName="active">Main Information</Link>
           <Link to="/login" activeClassName="active">Login</Link>
         </nav>
+        <aside>Search</aside>
         {this.props.children}
       </div>
     );

@@ -1,18 +1,19 @@
 import React, { Component } from 'react' ;
 import ReactDOM from 'react-dom';
 import { IndexRoute, Route, Router, browserHistory } from 'react-router';
-import Root from './containers/Root.jsx';
-import CommentBox from './containers/CommentBox.jsx';
-import Search from './containers/Search.jsx';
+import Dashboard from './containers/Dashboard.jsx';
+import MainInformation from './containers/MainInformation.jsx';
+import DetailInfo from './containers/DetailInfo.jsx';
 
 ReactDOM.render(
   <Router history={browserHistory}>
-    <Route path="/" component={Root}>
-      <IndexRoute component={CommentBox}>
-        <Route path="/search" component={Search} />
-      </IndexRoute>
-      <Route path="/login" component={() => <div>Login</div>} />
+    <Route path="/" component={Dashboard}>
+      <IndexRoute component={() => <div>Welcome to the Dashboard</div>} />
+      <Route path="/main-information" component={MainInformation}>
+        <Route path="/main-information/detail-info" component={DetailInfo} />
+      </Route>
     </Route>
+    <Route path="/login" component={() => <div>Login</div>} />
   </Router>,
   document.getElementById('app')
 );
