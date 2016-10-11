@@ -21,7 +21,3 @@ export default class CommentBox extends Component {
     );
   }
 }
-
-// <CommentBox>
-//   <CommentList />
-// </CommentBox>
