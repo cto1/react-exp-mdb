@@ -25,4 +25,10 @@ module.exports = {
       { from: 'index.html', to: 'index.html' },
     ]),
   ],
+  devServer: {
+    port: 3000,
+    contentBase: resolve('dist'),
+    historyApiFallback: true,
+    recordsPath: resolve('dist'),
+  },
 };
