@@ -4,7 +4,7 @@ We setup loading styles in project bundle for clear [CSS](https://github.com/web
 
 ### Modules instruction:
 
-1. Create styles file, like `some-styles.scss`;
+1. Create styles file, like `some-styles.scss`(with `.someClass { ... }`);
 2. Require it for component, like `import styles from './path-to-styles/some-styles.scss'`;
 3. Then pass class names in your JSX like `<div className={styles.someClass}></div>`.
 
