@@ -4,6 +4,7 @@ import { IndexRoute, Route, Router, browserHistory } from 'react-router';
 import Dashboard from './containers/Dashboard.jsx';
 import MainInformation from './containers/MainInformation.jsx';
 import DetailInfo from './containers/DetailInfo.jsx';
+import './styles/index.scss';
 
 ReactDOM.render(
   <Router history={browserHistory}>

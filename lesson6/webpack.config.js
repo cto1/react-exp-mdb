@@ -18,6 +18,23 @@ module.exports = {
         loader: 'babel',
         exclude: /node_modules/,
       },
+      {
+        test: /\.css?$/,
+        loader: 'style!css',
+      },
+      {
+        test: /\.scss?$/,
+        loader: 'style!css!sass',
+      },
+      {
+        test: /\.scss$/,
+        loaders: [
+          'style',
+          'css?modules&importLoaders=1&localIdentName=[hash:base64:5]',
+          // 'postcss',
+          'sass'
+        ],
+      },
     ],
   },
   plugins: [

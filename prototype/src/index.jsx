@@ -8,6 +8,7 @@ import Logs from './containers/Logs.jsx';
 import ApplicationSummary from './containers/ApplicationSummary.jsx';
 import EntityOwner from './containers/EntityOwner.jsx';
 import Home from './containers/Home.jsx';
+import './styles/index.scss';
 
 ReactDOM.render(
   <Router history={browserHistory}>
