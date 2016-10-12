@@ -7,13 +7,15 @@ import Tasks from './containers/Tasks.jsx';
 import Logs from './containers/Logs.jsx';
 import ApplicationSummary from './containers/ApplicationSummary.jsx';
 import EntityOwner from './containers/EntityOwner.jsx';
+import Home from './containers/Home.jsx';
 
 ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={App} >
+        <IndexRoute component={Home}/>
         <Route path="/apps" component={Applications} />
-        <Route path="/apps/:caseId" component={ApplicationSummary} />
-        <Route path="/apps/:caseId/:ownerId" component={EntityOwner} />
+        <Route path="/apps/:appId" component={ApplicationSummary} />
+        <Route path="/apps/:appId/:ownerId" component={EntityOwner} />
         <Route path="/tasks" component={Tasks} />
         <Route path="/logs" component={Logs} />
     </Route>
