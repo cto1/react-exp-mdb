@@ -21,7 +21,7 @@ export default class Applications extends Component {
       ));
     return (
       <div>Applications table
-        <p>{applications}}</p>
+        {applications}
       </div>
     );
   }
