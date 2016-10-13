@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import { IndexLink, Link } from 'react-router';
+import axios from 'axios';
 
-const data = [
-  { id: 1, author: 'Pete Hunt', text: 'This is one comment' },
-  { id: 2, author: 'Jordan Walke', text: 'This is *another* comment' },
-];
+export default class extends Component {
+  componentDidMount() {
+    axios.get('http://localhost:3030/data')
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
 
-export default class CommentBox extends Component {
   render() {
     return (
       <div>
