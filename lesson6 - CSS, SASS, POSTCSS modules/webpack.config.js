@@ -20,19 +20,15 @@ module.exports = {
       },
       {
         test: /\.css?$/,
-        loader: 'style!css',
-      },
-      {
-        test: /\.scss?$/,
-        loader: 'style!css!sass',
+        loaders: ['style', 'css'],
       },
       {
         test: /\.scss$/,
         loaders: [
           'style',
           'css?modules&importLoaders=1&localIdentName=[hash:base64:5]',
-          // 'postcss',
-          'sass'
+          'postcss',
+          'sass',
         ],
       },
     ],
