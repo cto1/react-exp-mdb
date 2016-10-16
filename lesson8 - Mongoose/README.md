@@ -1,1 +1,1 @@
-React [router](https://github.com/ReactTraining/react-router/tree/master/docs). [Tutorial](https://github.com/reactjs/react-router-tutorial) is very simple. [API](https://github.com/ReactTraining/react-router/blob/master/docs/API.md) for detailed information.
+Here we setup [MongoDB](https://www.mongodb.com/) and use it with [mongoose](http://mongoosejs.com/).

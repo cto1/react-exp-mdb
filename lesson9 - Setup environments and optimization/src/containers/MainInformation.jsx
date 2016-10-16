@@ -4,9 +4,8 @@ import styles from '../styles/comment-box.scss';
 
 export default class CommentBox extends Component {
   render() {
- //   console.log(styles);
     return (
-      <div className="commentBox" style={styles.commentBox}>
+      <div className="commentBox" className={styles.commentBox}>
         <h3>Main information</h3>
         <p>Some data</p>
         <Link to="/main-information/detail-info" activeClassName="active">Detail info</Link>

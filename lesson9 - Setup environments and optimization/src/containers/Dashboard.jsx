@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { IndexLink, Link } from 'react-router';
-import axios from 'axios';
+// import axios from 'axios';
 
 export default class extends Component {
   componentDidMount() {
-    axios.get('http://localhost:3030/data')
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+    // axios.get('http://localhost:3030/data')
+    //   .then(function (response) {
+    //     console.log(response);
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error);
+    //   });
   }
 
   render() {
