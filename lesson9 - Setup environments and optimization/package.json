@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines":{
+    "node":"^6.8.1"
+  },
   "scripts": {
     "dev:api": "better-npm-run dev:api",
     "dev:client": "better-npm-run dev:client",
