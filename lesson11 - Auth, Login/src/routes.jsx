@@ -3,6 +3,7 @@ import { IndexRoute, Route } from 'react-router';
 import Root from './containers/Root.jsx';
 import MainInformation from './containers/MainInformation.jsx';
 import DetailInfo from './containers/DetailInfo.jsx';
+import Signup from './containers/Signup.jsx';
 
 export default (
   <Route path="/" component={Root}>
@@ -11,5 +12,6 @@ export default (
       <Route path="/main-information/detail-info" component={DetailInfo} />
     </Route>
     <Route path="/login" component={() => <div>Login</div>} />
+    <Route path="/signup" component={Signup} />
   </Route>
 );

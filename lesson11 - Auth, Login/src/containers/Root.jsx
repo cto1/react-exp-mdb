@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { IndexLink, Link } from 'react-router';
 // import axios from 'axios';
 import AppBar from 'material-ui/AppBar';
-import FlatButtonExampleSimple from '../FlatButtonExampleSimple.jsx';
-// import MyAwesomeReactComponent from '../MyAwesomeReactComponent.jsx';
-// import AppBarExample from '../AppBarExample.jsx';
 import { List, ListItem } from 'material-ui/List';
 import ActionGrade from 'material-ui/svg-icons/action/grade';
 import ContentInbox from 'material-ui/svg-icons/content/inbox';
@@ -49,11 +46,14 @@ export default class Root extends Component {
               primaryText="Main Information"
               leftIcon={<ContentDrafts />}
             />
+            <ListItem
+              containerElement={<Link to="/signup" />}
+              primaryText="Signup"
+              leftIcon={<ContentDrafts />}
+            />
             <ListItem to="/login" primaryText="Login" leftIcon={<ContentDrafts />} />
           </List>
           <div style={{ width: '100%' }}>
-            <aside>Search</aside>
-            <FlatButtonExampleSimple />
             {this.props.children}
           </div>
         </div>
